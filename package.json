@@ -22,7 +22,7 @@
     "postinstall": "npm run build",
     "prestart": "npm run lint",
     "pretest": "npm run lint",
-    "dev": "ts-node-dev --respawn --transpileOnly ./server.ts",
+    "dev": "ts-node-dev --respawn --transpile-only ./server.ts",
     "start": "npm run build && node ./dist/server.js",
     "test": "npm run test-basic -- --runInBand",
     "test-basic": "NODE_ENV=testing jest --forceExit --detectOpenHandles --verbose",
@@ -64,7 +64,7 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
@@ -72,10 +72,10 @@
     "express-wolox-logger": "^2.0.0",
     "http-status-codes": "^1.4.0",
     "jwt-simple": "^0.5.1",
-    "pg": "^7.18.2",
+    "pg": "^8.0.3",
     "reflect-metadata": "^0.1.13",
     "rollbar": "^2.3.9",
-    "typeorm": "^0.2.22",
+    "typeorm": "^0.2.37",
     "umzug": "^2.1.0"
   },
   "devDependencies": {
@@ -109,20 +109,20 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-wolox": "^4.0.0",
     "eslint-config-wolox-node": "^3.0.0",
-    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.2.3",
-    "jest": "^24.9.0",
+    "jest": "^27.1.0",
     "nock": "^12.0.2",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.0",
-    "prompt": "^1.0.0",
+    "prompt": "^1.2.0",
     "supertest": "^4.0.2",
-    "ts-jest": "^24.3.0",
-    "ts-node-dev": "1.0.0-pre.44",
+    "ts-jest": "^27.0.5",
+    "ts-node-dev": "^1.1.8",
     "tslint": "^6.0.0",
-    "typescript": "^3.8.2"
+    "typescript": "^3.9.10"
   },
   "husky": {
     "hooks": {
